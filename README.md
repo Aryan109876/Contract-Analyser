@@ -125,3 +125,9 @@ This project was inspired by the need to automate repetitive tasks in legal cont
 ---
 
 **Note**: This is the frontend implementation of the application. The backend services for NLP processing and database operations would need to be implemented separately.
+![image](https://github.com/user-attachments/assets/13eb60b1-21d9-4801-9feb-0c45eb17e65e)
+![image](https://github.com/user-attachments/assets/11c45ffe-b94e-40cf-b582-123d1955ad04)
+![image](https://github.com/user-attachments/assets/f93bc73b-571e-4ff9-817a-3d90214412c7)
+
+
+
