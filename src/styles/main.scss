@@ -1,0 +1,97 @@
+// Main application styles
+
+// Variables
+$spacing-unit: 8px;
+
+// Global styles
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--v-background-base);
+  color: rgba(0, 0, 0, 0.87);
+  line-height: 1.5;
+}
+
+// Utility classes
+.text-primary {
+  color: var(--v-primary-base) !important;
+}
+
+.text-secondary {
+  color: var(--v-secondary-base) !important;
+}
+
+.text-accent {
+  color: var(--v-accent-base) !important;
+}
+
+// Spacing utility classes
+@for $i from 0 through 12 {
+  .ma-#{$i} { margin: $spacing-unit * $i !important; }
+  .mt-#{$i} { margin-top: $spacing-unit * $i !important; }
+  .mr-#{$i} { margin-right: $spacing-unit * $i !important; }
+  .mb-#{$i} { margin-bottom: $spacing-unit * $i !important; }
+  .ml-#{$i} { margin-left: $spacing-unit * $i !important; }
+  .mx-#{$i} { margin-left: $spacing-unit * $i !important; margin-right: $spacing-unit * $i !important; }
+  .my-#{$i} { margin-top: $spacing-unit * $i !important; margin-bottom: $spacing-unit * $i !important; }
+
+  .pa-#{$i} { padding: $spacing-unit * $i !important; }
+  .pt-#{$i} { padding-top: $spacing-unit * $i !important; }
+  .pr-#{$i} { padding-right: $spacing-unit * $i !important; }
+  .pb-#{$i} { padding-bottom: $spacing-unit * $i !important; }
+  .pl-#{$i} { padding-left: $spacing-unit * $i !important; }
+  .px-#{$i} { padding-left: $spacing-unit * $i !important; padding-right: $spacing-unit * $i !important; }
+  .py-#{$i} { padding-top: $spacing-unit * $i !important; padding-bottom: $spacing-unit * $i !important; }
+}
+
+// Animations
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.3s ease;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+.slide-enter-active,
+.slide-leave-active {
+  transition: transform 0.3s ease;
+}
+
+.slide-enter-from,
+.slide-leave-to {
+  transform: translateX(-20px);
+  opacity: 0;
+}
+
+// Custom component styles
+.contract-card {
+  border-radius: 8px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1) !important;
+  }
+}
+
+.highlight {
+  background-color: rgba(255, 193, 7, 0.2);
+  border-bottom: 2px solid #FFC107;
+  padding: 2px 0;
+}
+
+.highlight-warning {
+  background-color: rgba(255, 152, 0, 0.2);
+  border-bottom: 2px solid #FF9800;
+  padding: 2px 0;
+}
+
+.highlight-error {
+  background-color: rgba(244, 67, 54, 0.2);
+  border-bottom: 2px solid #F44336;
+  padding: 2px 0;
+}
